@@ -1,0 +1,20 @@
+{
+  "name": "handlebars-101-exercise",
+  "homepage": "https://github.com/m-tambo/handlebars-101-exercise",
+  "authors": [
+    "Michael Tambornino <michael.tambornino@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "handlebars": "^4.0.5"
+  }
+}
