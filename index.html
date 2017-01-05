@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Handlebars Exercise</title>
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
 </head>
 <body>
   <h1>Here's a random user</h1>
@@ -13,8 +14,16 @@
 
 <!-- handlebars script -->
    <script id="handleGrab" type="text/x-handlebars-template">
-      <div>
-         <h1>Meet, {{}}</h1>
+      <div class="container">
+         <h1>Meet {{results.0.name.title}} {{results.0.name.first}} {{results.0.name.last}}!</h1>
+         <img class="col-md-offset-5" src={{results.0.picture.medium}} />
+            <h4>Address: </h4>
+               <p>{{results.0.location.street}}</p>
+               <p>{{results.0.location.city}}</p>
+               <p>{{results.0.location.state}}</p>
+               <p>{{results.0.location.postcode}}</p>
+            <h4>Email:</h4>
+               <p>{{results.0.email}}</p>
       </div>
    </script>
 

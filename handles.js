@@ -27,10 +27,12 @@ var randomUser = {
 let userHTML = $('#handleGrab').html()
 
 //handlebars step two: compile it into a template
-let userTemplate = Handlebar.compile(userHTML)
+let userTemplate = Handlebars.compile(userHTML)
 
 //handlebars step three:render the HTML by passing the data to the template
 let userOutput = userTemplate(randomUser)
+
+console.log(userOutput)
 
 //handlebars step four: put the complete HTML into the DOM
 $('#displayUser').append(userOutput)
